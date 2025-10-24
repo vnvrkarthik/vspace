@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSUP answers</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: monospace;
+        background-color: #f8f9fa;
+        padding: 20px;
+      }
+      svg path {
+        fill: transparent;
+        stroke: #000;
+        stroke-width: 2;
+        stroke-dasharray: 850;
+        stroke-dashoffset: 850;
+        animation: pp 20s ease-in-out 1 forwards;
+      }
+      @keyframes pp {
+        0% {
+          stroke-dashoffset: 850;
+        }
+        80% {
+          fill: transparent;
+        }
+        100% {
+          stroke-dashoffset: 0;
+          fill: #000;
+        }
+      }
+    </style>
+    <!-- Include Prism.js and Prism.css -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-tomorrow.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-python.min.js"></script>
+  </head>
+  <body>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCjCnuERSUEGmrK989qeUc0UOQ6EWTloYA",
+        authDomain: "vnvrcontent.firebaseapp.com",
+        projectId: "vnvrcontent",
+        storageBucket: "vnvrcontent.firebasestorage.app",
+        messagingSenderId: "547621677436",
+        appId: "1:547621677436:web:9e9f4523c580064abe1cf9",
+        measurementId: "G-Q46FW0CLSC",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+    <header>
+      <center>
+        <h1 class="display-2 fw-bold">
+          <svg
+            width="273.12"
+            height="60.042"
+            viewBox="0 0 273.12 79.042"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              id="svgGroup"
+              stroke-linecap="round"
+              fill-rule="evenodd"
+              font-size="9pt"
+              stroke="#000"
+              stroke-width="0.25mm"
+              fill="#000"
+              style="stroke: #000; stroke-width: 0.25mm; fill: #000"
+            >
+              <path
+                d="M 138.72 4.481 L 138.8 4.801 A 1.946 1.946 0 0 0 137.566 5.292 Q 136.329 6.297 135.2 9.361 A 9.311 9.311 0 0 0 137.635 9.02 A 5.936 5.936 0 0 0 141.52 5.681 Q 142.05 4.621 142.078 3.669 A 3.607 3.607 0 0 0 142.08 3.561 Q 142.08 2.561 141.4 1.881 Q 140.72 1.201 139.84 1.201 Q 140.24 0.001 141.52 0.001 A 2.941 2.941 0 0 1 142.978 0.35 Q 144.098 0.976 144.56 2.721 Q 144.8 3.521 144.8 4.321 Q 144.8 6.721 142.48 9.001 A 7.258 7.258 0 0 1 139.688 10.675 Q 137.913 11.281 135.52 11.281 L 134.56 11.281 A 69.148 69.148 0 0 0 132.825 18.381 Q 132.12 22.038 131.651 26.214 A 129.568 129.568 0 0 0 131.32 29.561 Q 130.695 36.82 130.494 42.434 A 138.752 138.752 0 0 0 130.4 47.361 Q 130.4 65.361 133.6 65.361 Q 134.96 65.361 136.96 58.881 Q 138.335 54.426 139.956 48.685 A 729.36 729.36 0 0 0 141.48 43.201 Q 144 34.001 147.08 24.761 A 71.427 71.427 0 0 1 150.293 16.705 A 52.191 52.191 0 0 1 154.72 9.041 A 23.002 23.002 0 0 1 157.188 6.055 Q 158.626 4.608 160.123 3.761 A 8.737 8.737 0 0 1 164.48 2.561 A 3.709 3.709 0 0 1 165.361 2.66 A 2.773 2.773 0 0 1 166.36 3.121 A 2.545 2.545 0 0 1 167.052 3.91 Q 167.293 4.328 167.44 4.881 Q 162.329 4.881 158.024 9.859 A 25.217 25.217 0 0 0 156.68 11.561 A 50.567 50.567 0 0 0 152.023 19.482 A 68.797 68.797 0 0 0 148.72 27.841 Q 145.6 37.441 143 47.001 Q 140.4 56.561 137.8 63.241 A 33.372 33.372 0 0 1 136.826 65.511 Q 135.136 69.05 133.462 69.749 A 2.12 2.12 0 0 1 132.64 69.921 Q 128.64 69.921 126.72 63.361 A 45.843 45.843 0 0 1 125.251 56.085 Q 124.814 52.543 124.801 48.577 A 74.507 74.507 0 0 1 124.8 48.321 Q 124.8 38.561 126.52 27.961 A 119.659 119.659 0 0 1 127.811 21.17 Q 128.521 17.977 129.343 15.296 A 49.182 49.182 0 0 1 130.88 10.961 A 53.004 53.004 0 0 1 126.745 10.107 A 46.089 46.089 0 0 1 125.44 9.761 A 31.252 31.252 0 0 0 123.088 14.24 Q 120.93 19.165 118.87 26.934 A 199.131 199.131 0 0 0 116.88 35.201 Q 115.28 42.481 112.56 50.401 Q 109.84 58.321 106.52 64.321 Q 103.2 70.321 97.4 74.241 A 22.93 22.93 0 0 1 86.101 78.079 A 28.593 28.593 0 0 1 83.92 78.161 A 25.86 25.86 0 0 1 77.195 77.34 A 17.207 17.207 0 0 1 66.8 69.761 Q 63.84 65.041 63.84 59.601 A 22.406 22.406 0 0 1 64.291 55.186 A 24.645 24.645 0 0 1 64.32 55.041 A 19.879 19.879 0 0 1 66.075 50.042 A 14.285 14.285 0 0 1 71.92 44.001 Q 75.04 42.241 78.88 42.241 A 16.298 16.298 0 0 1 83.091 42.747 A 10.101 10.101 0 0 1 90 48.641 Q 91.2 51.281 91.2 54.041 Q 91.2 56.801 90.08 59.601 Q 87.391 66.244 81.34 66.32 A 11.188 11.188 0 0 1 81.2 66.321 A 3.455 3.455 0 0 1 80.476 66.249 A 2.425 2.425 0 0 1 79.6 65.881 A 2.374 2.374 0 0 1 78.911 65.136 A 3.292 3.292 0 0 1 78.64 64.561 Q 80.8 64.561 82.72 63.441 A 9.394 9.394 0 0 0 85.399 60.962 Q 86.743 59.163 87.68 56.481 A 14.98 14.98 0 0 0 87.975 55.489 Q 88.24 54.463 88.24 53.721 Q 88.24 52.793 88.122 51.628 A 30.782 30.782 0 0 0 88.08 51.241 A 7.434 7.434 0 0 0 87.845 50.08 Q 87.681 49.496 87.418 48.852 A 15.963 15.963 0 0 0 87.04 48.001 A 5.984 5.984 0 0 0 85.28 45.853 A 8.259 8.259 0 0 0 84 45.041 A 9.727 9.727 0 0 0 81.194 44.113 A 13.316 13.316 0 0 0 78.88 43.921 Q 71.28 43.921 67.68 50.641 Q 65.793 54.124 65.618 57.279 A 11.579 11.579 0 0 0 65.6 57.921 A 28.178 28.178 0 0 0 65.775 61.133 A 20.789 20.789 0 0 0 66.32 64.081 A 17.657 17.657 0 0 0 68.641 69.298 A 14.431 14.431 0 0 0 75.04 74.561 A 16.455 16.455 0 0 0 80.306 75.856 A 19.706 19.706 0 0 0 81.92 75.921 Q 88.8 75.921 94.24 72.161 Q 99.68 68.401 103.04 62.681 Q 106.4 56.961 109.4 49.281 Q 112.4 41.601 114.24 34.561 Q 119.04 16.721 123.6 9.201 Q 123.2 9.121 121.48 8.561 Q 119.76 8.001 119.16 7.841 A 84.138 84.138 0 0 0 118.813 7.749 Q 118.182 7.584 117 7.281 Q 115.714 6.951 114.89 6.784 A 17.104 17.104 0 0 0 114.56 6.721 Q 113.724 6.569 112.454 6.344 A 824.848 824.848 0 0 0 112.32 6.321 A 28.831 28.831 0 0 0 109.468 5.997 A 37.152 37.152 0 0 0 107.04 5.921 Q 96.64 5.921 91.68 13.761 A 18.099 18.099 0 0 0 89.476 18.383 A 15.308 15.308 0 0 0 88.8 22.881 Q 88.8 24.241 89.12 25.681 Q 89.633 28.71 91.123 30.327 A 5.504 5.504 0 0 0 93.76 31.921 A 4.773 4.773 0 0 0 95.274 32.161 A 5.422 5.422 0 0 0 95.28 32.161 A 2.384 2.384 0 0 1 94.752 33.163 Q 94.066 33.911 92.675 33.921 A 5.247 5.247 0 0 1 92.64 33.921 Q 87.76 33.921 85.76 28.721 A 14.222 14.222 0 0 1 84.899 25.091 A 17.68 17.68 0 0 1 84.8 23.201 A 13.799 13.799 0 0 1 85.129 20.298 Q 85.42 18.946 85.969 17.478 A 26.189 26.189 0 0 1 86.4 16.401 A 18.645 18.645 0 0 1 99.546 4.982 Q 103.019 4.062 107.27 4.005 A 42.187 42.187 0 0 1 107.84 4.001 A 25.664 25.664 0 0 1 111.459 4.292 Q 115.313 4.847 120.709 6.46 A 129.661 129.661 0 0 1 124.56 7.681 Q 127.051 4.215 130.018 3.095 A 8.264 8.264 0 0 1 132.96 2.561 Q 133.6 2.561 133.92 2.961 Q 134.24 3.361 134.32 4.081 A 8.926 8.926 0 0 0 128.539 6.224 A 13.733 13.733 0 0 0 126.56 8.241 Q 129.12 8.881 131.68 9.201 A 23.202 23.202 0 0 1 132.831 7.118 Q 134.112 5.08 135.409 4.25 A 3.3 3.3 0 0 1 137.2 3.681 A 3.123 3.123 0 0 1 137.71 3.719 Q 138.533 3.856 138.72 4.481 Z M 254.4 12.961 L 254.56 13.361 A 4.73 4.73 0 0 0 250.596 15.42 Q 250.04 16.167 249.603 17.185 A 11.832 11.832 0 0 0 249.48 17.481 Q 248 21.199 247.139 28.079 A 102.46 102.46 0 0 0 246.96 29.601 Q 253.76 30.881 257.36 37.601 Q 262.48 34.321 265.32 28.801 Q 268.16 23.281 268.16 17.921 A 12.442 12.442 0 0 0 264.369 8.887 A 16.22 16.22 0 0 0 264.12 8.641 A 13.061 13.061 0 0 0 258.661 5.526 Q 255.968 4.721 252.56 4.721 Q 238.08 4.721 230.16 15.041 A 28.026 28.026 0 0 0 226.064 22.44 A 23.706 23.706 0 0 0 224.64 30.561 Q 224.64 38.529 228.605 41.485 A 7.678 7.678 0 0 0 228.88 41.681 Q 230.64 42.801 232.72 42.801 A 4.011 4.011 0 0 1 232.217 43.669 A 2.387 2.387 0 0 1 230.24 44.641 A 8.674 8.674 0 0 1 226.247 43.752 Q 223.34 42.271 221.84 38.321 A 16.874 16.874 0 0 1 220.838 34.415 A 22.082 22.082 0 0 1 220.64 31.401 A 20.422 20.422 0 0 1 221.02 27.595 Q 221.362 25.794 222.012 23.832 A 37.207 37.207 0 0 1 222.4 22.721 Q 226.08 12.241 235.68 6.881 Q 243.04 2.721 252.56 2.721 A 35.648 35.648 0 0 1 257.695 3.07 Q 260.424 3.468 262.717 4.318 A 19.868 19.868 0 0 1 264.08 4.881 A 20.155 20.155 0 0 1 267.22 6.649 Q 268.91 7.827 270.062 9.25 A 11.209 11.209 0 0 1 270.88 10.401 Q 273.12 14.161 273.12 18.441 Q 273.12 22.721 271.48 26.641 Q 269.84 30.561 266.44 34.281 Q 263.04 38.001 258.48 40.241 Q 260.48 45.441 262.08 59.601 Q 262.64 64.161 263.6 68.481 A 19.8 19.8 0 0 0 264.785 72.145 Q 267.221 77.601 272.48 77.601 Q 272.337 78.891 270.781 79.025 A 4.432 4.432 0 0 1 270.4 79.041 A 15.272 15.272 0 0 1 265.787 78.396 Q 260.982 76.875 259.14 71.773 A 16.662 16.662 0 0 1 258.56 69.761 Q 257.52 65.361 257.24 60.881 A 414.128 414.128 0 0 1 256.986 56.408 Q 256.848 53.719 256.72 50.681 Q 256.563 46.931 256.13 44.126 A 29.926 29.926 0 0 0 255.6 41.441 A 27.08 27.08 0 0 1 246.588 43.039 A 30.57 30.57 0 0 1 246.24 43.041 L 245.52 43.041 Q 243.771 56.596 240.12 63.469 A 19.212 19.212 0 0 1 237.92 66.801 A 16.096 16.096 0 0 1 234.326 70.015 A 20.133 20.133 0 0 1 232.28 71.201 A 16.531 16.531 0 0 1 225.51 72.94 A 19.505 19.505 0 0 1 224.6 72.961 Q 221.08 72.961 218.515 71.949 A 11.184 11.184 0 0 1 217.56 71.521 Q 214.72 70.081 213.44 67.841 Q 211.68 64.561 211.68 61.841 A 16.343 16.343 0 0 1 212.084 58.155 A 14.495 14.495 0 0 1 212.48 56.761 Q 213.28 54.401 214.8 52.121 Q 216.32 49.841 218.8 48.401 Q 221.28 46.961 224.16 46.961 A 3.553 3.553 0 0 1 225.005 47.054 A 2.11 2.11 0 0 1 226.4 48.081 L 226.56 48.481 A 12.933 12.933 0 0 0 221.535 49.421 Q 218.559 50.662 216.492 53.544 A 15.607 15.607 0 0 0 215.92 54.401 Q 213.84 57.761 213.84 61.281 Q 213.84 62.881 214.24 64.561 A 9.317 9.317 0 0 0 215.803 67.784 Q 218.145 70.801 223.04 70.801 A 11.511 11.511 0 0 0 227.248 70.042 A 10.836 10.836 0 0 0 229.08 69.121 Q 231.76 67.441 233.48 64.961 Q 234.78 63.086 235.92 60.298 A 41.616 41.616 0 0 0 236.64 58.401 Q 238.195 53.852 239.501 47.439 A 162.39 162.39 0 0 0 240.48 42.161 A 11.597 11.597 0 0 1 238.636 41.358 Q 237.01 40.462 236.16 39.161 A 15.144 15.144 0 0 1 235.608 38.252 Q 234.88 36.945 234.88 36.161 L 234.88 34.721 Q 235.28 32.641 237.32 31.001 A 7.465 7.465 0 0 1 240.18 29.603 Q 241.308 29.313 242.64 29.281 A 114.29 114.29 0 0 1 243.365 25.772 Q 243.715 24.208 244.074 22.856 A 50.122 50.122 0 0 1 244.8 20.361 A 18.707 18.707 0 0 1 246.364 16.775 A 15.378 15.378 0 0 1 248 14.441 A 7.552 7.552 0 0 1 249.728 12.918 A 5.968 5.968 0 0 1 252.96 12.001 A 1.977 1.977 0 0 1 253.511 12.072 Q 254.167 12.262 254.4 12.961 Z M 43.04 34.241 A 54.219 54.219 0 0 0 43.061 35.772 Q 43.348 45.925 47.52 50.321 Q 44 58.161 39.72 62.961 A 21.307 21.307 0 0 1 38.287 64.426 Q 36.912 65.698 35.508 66.485 A 9.368 9.368 0 0 1 30.88 67.761 A 8.438 8.438 0 0 1 29.882 67.705 Q 27.876 67.466 27 66.201 A 4.14 4.14 0 0 1 26.62 65.511 Q 25.92 63.922 25.92 60.961 Q 25.92 57.281 28 50.001 Q 30.08 42.721 32.12 34.801 A 82.581 82.581 0 0 0 32.791 32.002 Q 33.455 28.992 33.797 26.285 A 43.219 43.219 0 0 0 34.16 20.881 Q 34.16 12.641 30.24 7.641 A 12.447 12.447 0 0 0 23.614 3.232 A 17.322 17.322 0 0 0 18.96 2.641 Q 15.12 2.641 11.68 4.481 A 19.486 19.486 0 0 0 4.408 11.531 A 28.869 28.869 0 0 0 1.68 17.441 A 39.715 39.715 0 0 0 1.307 18.578 Q 0.683 20.586 0.357 22.423 A 21.874 21.874 0 0 0 0 26.241 Q 0 30.161 1.04 33.281 Q 2.76 38.172 6.575 39.777 A 10.806 10.806 0 0 0 10.8 40.561 Q 14.48 40.561 17.2 38.281 A 13.7 13.7 0 0 0 19.554 35.725 A 16.822 16.822 0 0 0 21.44 32.241 A 0.602 0.602 0 0 0 21.48 32.141 Q 21.556 31.883 21.32 31.681 A 1.015 1.015 0 0 0 21.305 31.668 Q 21.071 31.475 20.781 31.475 A 0.916 0.916 0 0 0 20.68 31.481 A 0.832 0.832 0 0 0 20.629 31.488 Q 20.454 31.518 20.331 31.621 A 0.668 0.668 0 0 0 20.16 31.841 Q 16.96 38.721 10.8 38.721 Q 8.96 38.721 7.36 38.001 A 8.103 8.103 0 0 1 3.375 33.936 Q 2.636 32.37 2.295 30.311 A 23.947 23.947 0 0 1 2 26.401 A 25.753 25.753 0 0 1 2.188 23.285 A 26.422 26.422 0 0 1 5.92 12.721 Q 10.96 4.561 18.96 4.561 A 14.418 14.418 0 0 1 21.868 4.839 A 9.749 9.749 0 0 1 27.12 7.681 Q 30.08 10.801 30.08 16.521 A 32.424 32.424 0 0 1 29.94 19.462 Q 29.722 21.857 29.162 24.57 A 69.145 69.145 0 0 1 27.76 30.121 Q 25.44 38.001 23.12 45.761 A 71.775 71.775 0 0 0 22.025 49.837 Q 21.432 52.35 21.126 54.586 A 32.986 32.986 0 0 0 20.8 59.041 A 16.722 16.722 0 0 0 21.216 62.941 Q 22.391 67.824 26.878 69.21 A 13.832 13.832 0 0 0 30.96 69.761 Q 34.389 69.761 37.704 67.39 A 20.757 20.757 0 0 0 40.64 64.801 A 35.228 35.228 0 0 0 41.82 63.496 Q 45.846 58.819 49.2 51.761 A 9.562 9.562 0 0 0 50.042 52.166 A 7.766 7.766 0 0 0 53.08 52.801 A 4.708 4.708 0 0 0 53.145 52.8 Q 55.047 52.774 55.44 51.201 A 6.207 6.207 0 0 1 52.377 50.425 A 7.342 7.342 0 0 1 50.48 48.881 A 99.592 99.592 0 0 0 52.318 44.319 A 84.52 84.52 0 0 0 55.72 32.921 A 96.717 96.717 0 0 0 56.664 28.099 Q 57.44 23.467 57.44 20.081 Q 57.44 15.583 56.325 13.589 A 2.74 2.74 0 0 0 53.84 12.001 A 5.743 5.743 0 0 0 50.713 12.933 Q 49.707 13.571 48.788 14.645 A 14.72 14.72 0 0 0 47.28 16.801 A 29.728 29.728 0 0 0 43.795 26.142 A 41.337 41.337 0 0 0 43.04 34.241 Z M 192.8 34.241 A 54.219 54.219 0 0 0 192.821 35.772 Q 193.108 45.925 197.28 50.321 Q 193.76 58.161 189.48 62.961 A 21.307 21.307 0 0 1 188.047 64.426 Q 186.672 65.698 185.268 66.485 A 9.368 9.368 0 0 1 180.64 67.761 A 8.438 8.438 0 0 1 179.642 67.705 Q 177.636 67.466 176.76 66.201 A 4.14 4.14 0 0 1 176.38 65.511 Q 175.68 63.922 175.68 60.961 Q 175.68 57.281 177.76 50.001 Q 179.84 42.721 181.88 34.801 A 82.581 82.581 0 0 0 182.551 32.002 Q 183.215 28.992 183.557 26.285 A 43.219 43.219 0 0 0 183.92 20.881 Q 183.92 12.641 180 7.641 A 12.447 12.447 0 0 0 173.374 3.232 A 17.322 17.322 0 0 0 168.72 2.641 Q 164.88 2.641 161.44 4.481 A 19.486 19.486 0 0 0 154.168 11.531 A 28.869 28.869 0 0 0 151.44 17.441 A 39.715 39.715 0 0 0 151.067 18.578 Q 150.443 20.586 150.117 22.423 A 21.874 21.874 0 0 0 149.76 26.241 Q 149.76 30.161 150.8 33.281 Q 152.52 38.172 156.335 39.777 A 10.806 10.806 0 0 0 160.56 40.561 Q 164.24 40.561 166.96 38.281 A 13.7 13.7 0 0 0 169.314 35.725 A 16.822 16.822 0 0 0 171.2 32.241 A 0.602 0.602 0 0 0 171.24 32.141 Q 171.316 31.883 171.08 31.681 A 1.015 1.015 0 0 0 171.065 31.668 Q 170.831 31.475 170.541 31.475 A 0.916 0.916 0 0 0 170.44 31.481 A 0.832 0.832 0 0 0 170.389 31.488 Q 170.214 31.518 170.091 31.621 A 0.668 0.668 0 0 0 169.92 31.841 Q 166.72 38.721 160.56 38.721 Q 158.72 38.721 157.12 38.001 A 8.103 8.103 0 0 1 153.135 33.936 Q 152.396 32.37 152.055 30.311 A 23.947 23.947 0 0 1 151.76 26.401 A 25.753 25.753 0 0 1 151.948 23.285 A 26.422 26.422 0 0 1 155.68 12.721 Q 160.72 4.561 168.72 4.561 A 14.418 14.418 0 0 1 171.628 4.839 A 9.749 9.749 0 0 1 176.88 7.681 Q 179.84 10.801 179.84 16.521 A 32.424 32.424 0 0 1 179.7 19.462 Q 179.482 21.857 178.922 24.57 A 69.145 69.145 0 0 1 177.52 30.121 Q 175.2 38.001 172.88 45.761 A 71.775 71.775 0 0 0 171.785 49.837 Q 171.192 52.35 170.886 54.586 A 32.986 32.986 0 0 0 170.56 59.041 A 16.722 16.722 0 0 0 170.976 62.941 Q 172.151 67.824 176.638 69.21 A 13.832 13.832 0 0 0 180.72 69.761 Q 184.149 69.761 187.464 67.39 A 20.757 20.757 0 0 0 190.4 64.801 A 35.228 35.228 0 0 0 191.58 63.496 Q 195.606 58.819 198.96 51.761 A 9.562 9.562 0 0 0 199.802 52.166 A 7.766 7.766 0 0 0 202.84 52.801 A 4.708 4.708 0 0 0 202.905 52.8 Q 204.807 52.774 205.2 51.201 A 6.207 6.207 0 0 1 202.137 50.425 A 7.342 7.342 0 0 1 200.24 48.881 A 99.592 99.592 0 0 0 202.078 44.319 A 84.52 84.52 0 0 0 205.48 32.921 A 96.717 96.717 0 0 0 206.424 28.099 Q 207.2 23.467 207.2 20.081 Q 207.2 15.583 206.085 13.589 A 2.74 2.74 0 0 0 203.6 12.001 A 5.743 5.743 0 0 0 200.473 12.933 Q 199.467 13.571 198.548 14.645 A 14.72 14.72 0 0 0 197.04 16.801 A 29.728 29.728 0 0 0 193.555 26.142 A 41.337 41.337 0 0 0 192.8 34.241 Z M 54.219 14.824 A 1.132 1.132 0 0 0 53.48 14.561 Q 52.023 14.561 50.697 16.972 A 15.301 15.301 0 0 0 50.08 18.241 A 32.601 32.601 0 0 0 47.898 25.284 Q 47.04 29.653 47.04 34.881 A 45.632 45.632 0 0 0 47.235 39.246 Q 47.65 43.551 48.95 46.369 A 13.29 13.29 0 0 0 49.04 46.561 A 111.036 111.036 0 0 0 52.643 35.803 Q 54.725 28.251 55.2 21.601 A 31.004 31.004 0 0 0 55.277 19.834 A 27.632 27.632 0 0 0 55.28 19.441 Q 55.28 15.695 54.219 14.824 Z M 203.979 14.824 A 1.132 1.132 0 0 0 203.24 14.561 Q 201.783 14.561 200.457 16.972 A 15.301 15.301 0 0 0 199.84 18.241 A 32.601 32.601 0 0 0 197.658 25.284 Q 196.8 29.653 196.8 34.881 A 45.632 45.632 0 0 0 196.995 39.246 Q 197.41 43.551 198.71 46.369 A 13.29 13.29 0 0 0 198.8 46.561 A 111.036 111.036 0 0 0 202.403 35.803 Q 204.485 28.251 204.96 21.601 A 31.004 31.004 0 0 0 205.037 19.834 A 27.632 27.632 0 0 0 205.04 19.441 Q 205.04 15.695 203.979 14.824 Z M 245.84 40.961 L 246.16 40.961 Q 250.64 40.961 254.88 39.041 A 14.798 14.798 0 0 0 252.966 35.454 A 10.252 10.252 0 0 0 246.8 31.441 L 245.84 40.961 Z M 242.32 31.121 A 9.644 9.644 0 0 0 240.833 31.354 Q 239.103 31.777 238.24 32.841 Q 237.289 34.013 237.092 34.86 A 1.855 1.855 0 0 0 237.04 35.281 Q 237.04 38.561 240.8 40.081 Q 241.76 34.001 242.32 31.121 Z"
+                vector-effect="non-scaling-stroke"
+              />
+            </g>
+          </svg>
+        </h1>
+      </center>
+    </header>
+
+    <h2>DSUP Answers</h2>
+    <div class="ans-container row">
+      <!-- 2-->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 2</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+from abc import ABC, abstractmethod
+print('vnvr')
+class Appliance(ABC):
+    def __init__(self, name):
+        self.name = name
+        
+    @abstractmethod
+    def turn_on(self):
+        pass
+
+class WashingMachine(Appliance):
+    def turn_on(self):
+        print(f"Turning on {self.name}")
+class Refrigirator(Appliance):
+    def turn_on(self):
+        print(f"Turning on {self.name}")
+
+washing_machine = WashingMachine("Sanyo", 110)
+washing_machine.turn_on()
+
+refrigerator = Refrigirator("Samsung", 220)
+refrigerator.turn_on()                    
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <!-- 3 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 3</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+n = int(input('Enter a number: '))
+def even_or_odd(n):
+    if n % 2 == 0:
+        return 'Even'
+    else:
+        return 'Odd'
+print(even_or_odd(n))
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <!--  4 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 4</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+word = input('Enter a Word: ')
+letter = input('Enter a letter u want to search: ')
+def number_of_occurrences(letter,word):
+    count = 0
+    for i in word:
+        if i == letter:
+            count += 1
+    return count
+
+letter_count = number_of_occurrences(letter, word)
+
+print(f'The letter {letter} appears {letter_count} times in the {word}.')
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <!-- 5 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 5</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+class Calculator:
+def __init__(self,a,b):
+    self.a = a
+    self.b = b
+def add(self):
+    return self.a + self.b
+def subtract(self):
+    return self.a - self.b
+def multiply(self):
+    return self.a * self.b
+def divide(self):
+    if b == 0:
+        return 'Error: Division by zero is not allowed.'
+    else:
+        return self.a / self.b
+a = int(input('Enter a number'))
+b = int(input('Enter a number'))
+calculator = Calculator(a, b)
+print(calculator.add())
+print(calculator.subtract())
+print(calculator.multiply())
+print(calculator.divide())
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 6</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+class Vehicle:
+def __init__(self, name,model):
+    self.name = name
+    self.model = model
+def start(self):
+    return 'It starts'
+class Car(Vehicle):
+def start(self):
+    return self.name,'is starting'
+
+ford = Car('Ford','Mustang')
+print(ford.start())
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 7 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 7</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+class Person:
+def greet(self):
+    print("Hello")
+class Student(Person):
+def greet(self):
+    print("Hello, I am a student")
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 8 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 8</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+# 8a
+n = int(input('Enter number: '))
+even_squares = [i*i for i in range(n) if i%2==0]
+print(even_squares)
+#8b
+fruits  = ['mango','grapes','orange','rasberry','strawberry','guava']
+s_fruits =[f for f in fruits if 's' in f]
+print(s_fruits)
+                    
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 9 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 9</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+class BankAccount():
+def __init__(self,name,account_number):
+    self.name = name
+    self.account_number = account_number
+def get_name(self):
+    return 'Bank Account'
+class SavingsAccount(BankAccount):
+def get_name(self):
+    return 'Savings Account'
+class BalanceAccount(BankAccount):
+def get_name(self):
+    return 'Balance Account'
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 10 -->
+
+      <!-- 11 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 11</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+class Employee:
+def __init__(self, name, age, salary):
+    self.name = name
+    self.age = age
+    self.salary = salary
+class FulltimeEmployee(Employee):
+def calculate_salary(self):
+    return self.salary
+full_time_employee = FulltimeEmployee('Krishna',23,50000)
+print(full_time_employee.calculate_salary())
+                    
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 12 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 12</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+class Student:
+def __init__(self, name, subject1, subject2,subject3,subject4,subject5,subject6):
+    self.name = name
+    self.subject1 = subject1
+    self.subject2 = subject2
+    self.subject3 = subject3
+    self.subject4 = subject4
+    self.subject5 = subject5
+    self.subject6 = subject6
+def average_grade(self):
+    average = (self.subject1 + self.subject2 + self.subject3 + self.subject4 + self.subject5 + self.subject6) / 6
+    if average >90:
+        return 'S'
+    elif average >80:
+        return 'A'
+    elif average >70:
+        return 'B'
+    elif average >60:
+        return 'C'
+    elif average>50:
+        return 'D'
+    elif average>40:
+        return 'E'
+    else:
+        return 'F'
+
+student1 = Student('Shasanth', 90, 85, 95, 88, 92, 90)
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 13 -->
+
+      <!-- 14 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 14</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+word = input('Enter a word: ')
+letter = input('Enter a letter to search: ')
+count = word.count(letter)
+print(count)
+                    
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 15 -->
+      <!-- 16 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 16</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+#16a 
+#also similar to 8a
+n = int(input('Enter number: '))
+even_squares = [i*i for i in range(n) if i%2==0]
+print(even_squares)
+#16b
+cities = ['New York','Hyderabad','Vizag','Paris','Tokyo','ddkjfdkf']
+vowels= {'a','e','i','o','u'}
+vowel_cities = [city for city in cities if any(letter for letter in city if letter in vowels)]
+print(vowel_cities)
+                    
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 17 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 17</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+from abc import ABC,abstractmethod
+class Shape:
+    @abstractmethod
+    def area(self):
+        pass
+    @abstractmethod
+    def perimeter(self):
+        pass
+class Triangle(Shape):
+    def __init__(self, base, height):
+        self.base = base
+        self.height = height
+    def area(self):
+        return 0.5 * self.base * self.height
+    def perimeter(self):
+        return self.base + self.base + self.height
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+    def area(self):
+        return 3.14 * self.radius ** 2
+    def perimeter(self):
+        return 2 * 3.14 * self.radius
+
+triangle =Triangle(5,10)
+print(f"Triangle area: {triangle.area()}")
+print(f"Triangle perimeter: {triangle.perimeter()}")
+
+circle = Circle(7)
+print(f"Circle area: {circle.area()}")
+print(f"Circle perimeter: {circle.perimeter()}")
+                    
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- -->
+      <!-- 18 -->
+      <!-- 19 -->
+      <!-- 20 -->
+    </div>
+
+    <script>
+      window.location.href ='https://thenameisvnvr.github.io/vnvrcontent/dsupanswers1.html'
+    </script>
+  </body>
+</html>
