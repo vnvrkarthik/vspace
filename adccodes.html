@@ -274,6 +274,19 @@ ylabel('Amplitude');
 title('PSK Modulated Signal');
 grid on;
 
+                          (or)
+% Simple ASK Modulation
+data = randi([0 1], 1, 8);  % Binary input data
+data1 = 2.*data-1
+T = 1;                             % Bit duration (s)
+fs = 1000;                         % Sampling frequency (Hz)
+fc = 1;                           % Carrier frequency (Hz)
+t = 0:1/fs:T*length(data)-1/fs;    % Time vector
+carrier = sin(2*pi*fc*t);          % Carrier signal
+ask_signal = carrier .* repelem(data1, fs*T);
+plot(t, ask_signal);              
+xlabel('Time (s)'); ylabel('Amplitude'); title('ASK Signal'); grid on;
+
                         </code>
                       </pre>
                       <div><img style="width: 100%;" class="rounded-3" src="psk.png" alt=""></div>
@@ -333,4 +346,5 @@ grid on;
     <!-- Modal -->
   </body>
 </html>
+
 
