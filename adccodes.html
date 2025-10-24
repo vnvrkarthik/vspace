@@ -273,8 +273,12 @@ xlabel('Time (s)');
 ylabel('Amplitude');
 title('PSK Modulated Signal');
 grid on;
+                        </code>
+                      </pre>
 
-                          (or)
+              <center>(OR)</center>
+                       <pre class="mx-2">
+                        <code class="matlab rounded-3" style="background-color: #11192e;color: white;">
 % Simple ASK Modulation
 data = randi([0 1], 1, 8);  % Binary input data
 data1 = 2.*data-1
@@ -283,10 +287,9 @@ fs = 1000;                         % Sampling frequency (Hz)
 fc = 1;                           % Carrier frequency (Hz)
 t = 0:1/fs:T*length(data)-1/fs;    % Time vector
 carrier = sin(2*pi*fc*t);          % Carrier signal
-ask_signal = carrier .* repelem(data1, fs*T);
-plot(t, ask_signal);              
+ask_signal = carrier .* repelem(data1, fs*T); % ASK modulation
+plot(t, ask_signal);               % Plot
 xlabel('Time (s)'); ylabel('Amplitude'); title('ASK Signal'); grid on;
-
                         </code>
                       </pre>
                       <div><img style="width: 100%;" class="rounded-3" src="psk.png" alt=""></div>
@@ -328,6 +331,20 @@ grid on;
 
                         </code>
                       </pre>
+               <center>(OR)</center>
+                       <pre class="mx-2">
+                        <code class="matlab rounded-3" style="background-color: #11192e;color: white;">
+data = [1 0 1 1 0];                % Binary input data
+T = 1;                             % Bit duration (s)
+fs = 1000;                         % Sampling frequency (Hz)
+f0 = 3; f1 = 3*f0;                  % Frequencies for 0 and 1 (Hz)
+t = 0:1/fs:T*length(data)-1/fs;    % Time vector
+freq = f0 + (f1-f0)*repelem(data, fs*T); % Frequency vector
+fsk_signal = sin(2*pi*freq.*t);    % FSK modulation
+plot(t, fsk_signal);               % Plot
+xlabel('Time (s)'); ylabel('Amplitude'); title('FSK Signal'); grid on;
+                        </code>
+                      </pre>
              <div><img style="width: 100%;" class="rounded-3" src="fsk.png" alt=""></div>
             </div>
            
@@ -346,5 +363,6 @@ grid on;
     <!-- Modal -->
   </body>
 </html>
+
 
 
