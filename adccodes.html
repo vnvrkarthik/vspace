@@ -279,17 +279,17 @@ grid on;
               <center>(OR)</center>
                        <pre class="mx-2">
                         <code class="matlab rounded-3" style="background-color: #11192e;color: white;">
-% Simple ASK Modulation
+
 data = randi([0 1], 1, 8);  % Binary input data
 data1 = 2.*data-1
 T = 1;                             % Bit duration (s)
 fs = 1000;                         % Sampling frequency (Hz)
 fc = 1;                           % Carrier frequency (Hz)
-t = 0:1/fs:T*length(data)-1/fs;    % Time vector
+t = 0:1/fs:T*length(data)-1/fs;    
 carrier = sin(2*pi*fc*t);          % Carrier signal
-ask_signal = carrier .* repelem(data1, fs*T); 
-plot(t, ask_signal);               % Plot
-xlabel('Time (s)'); ylabel('Amplitude'); title('ASK Signal'); grid on;
+Psk_signal = carrier .* repelem(data1, fs*T); 
+plot(t, Psk_signal);              
+xlabel('Time (s)'); ylabel('Amplitude'); title('PSK Signal'); grid on;
                         </code>
                       </pre>
                       <div><img style="width: 100%;" class="rounded-3" src="psk.png" alt=""></div>
@@ -363,6 +363,7 @@ xlabel('Time (s)'); ylabel('Amplitude'); title('FSK Signal'); grid on;
     <!-- Modal -->
   </body>
 </html>
+
 
 
 
