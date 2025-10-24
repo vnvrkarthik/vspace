@@ -380,6 +380,61 @@ xlabel('Time (s)');
              
             </div>
             
+                         <!--  1-->
+            <div class="card-container w-100 mb-2">
+                <b>&#x265C; DPCM</b>
+               <pre class="mx-2">
+                        <code class="matlab rounded-3" style="background-color: #11192e;color: white;">
+% Section 1: Parameters and Input Signal
+fs = 1000;                      % Sampling frequency
+t = 0:1/fs:1;                   % Time vector (1 sec)
+x = sin(2*pi*5*t);              % Original signal (5 Hz sine wave)
+
+% Section 2: DPCM Encoding
+x_hat = zeros(size(x));         % Predicted signal
+d = zeros(size(x));             % Difference signal
+x_hat(1) = 0;                   % Initial prediction
+d(1) = x(1);                    % First sample is raw
+
+for n = 2:length(x)
+    x_hat(n) = x(n-1);          % Predict using previous sample
+    d(n) = x(n) - x_hat(n);     % Compute difference
+end
+
+% Section 3: Quantization (optional for realism)
+% Here we simulate quantization by rounding to 2 decimal places
+d_q = round(d, 2);              % Quantized difference
+
+% Section 4: DPCM Decoding (Reconstruction)
+x_rec = zeros(size(x));         % Reconstructed signal
+x_rec(1) = d_q(1);              % First sample is raw
+
+for n = 2:length(x)
+    x_rec(n) = x_rec(n-1) + d_q(n);  % Reconstruct using previous value
+end
+
+% Section 5: Plotting
+subplot(3,1,1); plot(t, x); title('Original Signal');
+subplot(3,1,2); plot(t, d_q); title('DPCM Encoded (Quantized Differences)');
+subplot(3,1,3); plot(t, x_rec); title('Reconstructed Signal');
+xlabel('Time (s)');
+                        </code>
+                      </pre>
+              <center>(OR)</center>
+                       <pre class="mx-2">
+                        <code class="matlab rounded-3" style="background-color: #11192e;color: white;">
+% Simple DPCM
+fs = 1000; t = 0:1/fs:1; x = sin(2*pi*5*t); % Signal (5 Hz sine)
+d = [x(1) x(2:end)-x(1:end-1)]; % Differences (first sample raw)
+d_q = round(d, 2); % Quantized differences
+x_rec = cumsum(d_q); % Reconstructed signal
+subplot(3,1,1); plot(t, x); title('Original');
+subplot(3,1,2); plot(t, d_q); title('Quantized Diff');
+subplot(3,1,3); plot(t, x_rec); title('Reconstructed'); xlabel('Time (s)');
+                        </code>
+                      </pre>
+             
+            </div>
             <!--  -->
           </div>
         </div>
@@ -393,6 +448,7 @@ xlabel('Time (s)');
     <!-- Modal -->
   </body>
 </html>
+
 
 
 
