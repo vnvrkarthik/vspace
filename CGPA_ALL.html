@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CGPA_ALL_LIST</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="button.css">
+
+
+
+<link rel="icon" href="https://avatars.githubusercontent.com/u/166198214">
+
+
+    <!-- Basic SEO & Browser Tab -->
+  <meta name="description" content="CGPA CALCLATOR">
+  <meta name="author" content="VNVR">
+  <link rel="icon" href="https://ibb.co/bRrjRZMM][img]https://i.ibb.co/bRrjRZMM/BLE.jpg" type="image/png">
+
+  <!-- Open Graph / Social Media Image Previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vnvrkarthik.github.io/vspace/CGPA42.html">
+  <meta property="og:title" content="VNVR">
+  <meta property="og:description" content="calclate CGPA">
+  <meta property="og:image" content="https://ibb.co/bRrjRZMM][img]https://i.ibb.co/bRrjRZMM/BLE.jpg">
+  <meta property="og:image:alt" content="Description of the preview image for accessibility">
+
+  <!-- Twitter / X Large Image Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://ibb.co/bRrjRZMM][img]https://i.ibb.co/bRrjRZMM/BLE.jpg">
+    
+    <meta name="theme-color" content="#009879">
+    <meta name="msapplication-navbutton-color" content="#009879" >
+    <meta name="mobile-web-app-capable" content="yes" >
+    <meta name="apple-mobile-web-app-status-bar-style" content="bCMCk-translucent" >
+ 
+
+    <meta name="view-transition" content="same-origin">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Agrave+Pro:wght@100..700&family=Iceberg&family=Outfit:wght@100..900&family=Silkscreen:wght@400;700&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+
+html{
+      -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+
+    /* font-family: "Agrave Pro", cursive; */
+
+
+      /* font-family: "Outfit", sans-serif; */
+
+      /* font-family: "Silkscreen", sans-serif; */
+    /* font-weight: 400-700; */
+
+      /* font-family: "Iceberg", sans-serif; */
+        font-family: "Tangerine", cursive;
+
+
+}
+
+#mainparent{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+flex-direction: column;
+justify-content:space-around;
+align-items:center;
+align-content: center;
+
+}
+ul{
+    font-size: small;
+}
+.parent {
+    margin: 10px;
+      width: 290px;
+  /* height: 300px; */
+  perspective: 1000px;
+  position: relative;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.card {
+  height: 100%;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #7d46fc 0%, #3fc6fb 100%);
+  transition: all 0.5s ease-in-out;
+  transform-style: preserve-3d;
+  box-shadow:
+    rgba(37, 5, 71, 0) 40px 50px 25px -40px,
+    rgba(34, 5, 71, 0.2) 0px 25px 25px -5px;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.glass {
+  transform-style: preserve-3d;
+  position: absolute;
+  inset: 8px;
+  border-radius: 55px;
+  border-top-right-radius: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.349) 0%,
+    rgba(255, 255, 255, 0.815) 100%
+  );
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  transform: translate3d(0px, 0px, 25px);
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  transition: all 0.5s ease-in-out;
+}
+
+.content {
+  padding: 100px 60px 0px 30px;
+  transform: translate3d(0, 0, 26px);
+  position: relative;
+  z-index: 10;
+}
+
+.content .title {
+  display: block;
+font-family: "Iceberg", sans-serif;
+  color: #fff;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.content .text {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+    font-family: "Tangerine", cursive;
+font-weight: 700;
+font-size: 1.5rem !important;
+  margin-top: 20px;
+}
+
+.bottom {
+  padding: 10px 12px;
+  transform-style: preserve-3d;
+  position: absolute;
+  bottom: 10px;
+  /* left: 20px; */
+  scale: 0.7;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translate3d(0, 0, 26px);
+  z-index: 10;
+}
+
+.bottom .social-buttons-container {
+  display: flex;
+  gap: 10px;
+  transform-style: preserve-3d;
+}
+
+.bottom .social-buttons-container .social-button {
+  width: 30px;
+  aspect-ratio: 1;
+  padding: 5px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  border: none;
+  display: grid;
+  place-content: center;
+  box-shadow: rgba(28, 5, 71, 0.5) 0px 7px 5px -5px;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out,
+    background 0.2s ease-in-out;
+}
+
+.bottom .social-buttons-container .social-button:first-child {
+  transition-delay: 0.05s;
+}
+
+.bottom .social-buttons-container .social-button:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.bottom .social-buttons-container .social-button:nth-child(3) {
+  transition-delay: 0.15s;
+}
+
+.bottom .social-buttons-container .social-button .svg {
+  width: 15px;
+  fill: #3f5efb;
+}
+
+.bottom .social-buttons-container .social-button:hover {
+  background: black;
+  transform: scale(1.1) translate3d(0, 0, 40px);
+  box-shadow: rgba(34, 5, 71, 0.4) -5px 15px 10px 0px;
+}
+
+.bottom .social-buttons-container .social-button:hover .svg {
+  fill: white;
+}
+
+.bottom .social-buttons-container .social-button:active {
+  background: rgb(136, 0, 255);
+  transform: scale(1.05) translate3d(0, 0, 30px);
+}
+
+.bottom .social-buttons-container .social-button:active .svg {
+  fill: black;
+}
+
+.logo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-style: preserve-3d;
+  z-index: 5;
+}
+
+.logo .circle {
+  display: block;
+  position: absolute;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) -10px 10px 20px 0px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.233);
+  transition: all 0.5s ease-in-out;
+}
+
+.logo .circle1 {
+  width: 170px;
+  transform: translate3d(0, 0, 20px);
+  top: 8px;
+  right: 8px;
+}
+
+.logo .circle2 {
+  width: 140px;
+  transform: translate3d(0, 0, 40px);
+  top: 10px;
+  right: 10px;
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  transition-delay: 0.1s;
+}
+
+.logo .circle3 {
+  width: 110px;
+  transform: translate3d(0, 0, 60px);
+  top: 17px;
+  right: 17px;
+  transition-delay: 0.2s;
+}
+
+.logo .circle4 {
+  width: 80px;
+  transform: translate3d(0, 0, 80px);
+  top: 23px;
+  right: 23px;
+  transition-delay: 0.3s;
+}
+
+.logo .circle5 {
+  width: 50px;
+  transform: translate3d(0, 0, 100px);
+  top: 30px;
+  right: 30px;
+  display: grid;
+  place-content: center;
+  transition-delay: 0.4s;
+  color: #ffffff;
+ color: #e0f7ff;
+  text-shadow:
+    0 0 6px #3ce2ff,
+    0 0 18px #0099ff,
+    0 0 36px #2870ff;
+}
+
+.logo .circle5 .svg {
+  width: 20px;
+  fill: white;
+}
+
+.parent:hover .card {
+  transform: rotate3d(1, 1, 0, 30deg);
+  box-shadow:
+    rgba(28, 5, 71, 0.3) 30px 50px 25px -40px,
+    rgba(28, 5, 71, 0.3) 0px 25px 30px 0px;
+}
+
+.parent:hover .card .bottom .social-buttons-container .social-button {
+  transform: translate3d(0, 0, 50px);
+  box-shadow: rgba(34, 5, 71, 0.2) -5px 20px 10px 0px;
+}
+
+.parent:hover .card .logo .circle2 {
+  transform: translate3d(0, 0, 60px);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.parent:hover .card .logo .circle3 {
+  transform: translate3d(0, 0, 80px);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.parent:hover .card .logo .circle4 {
+  transform: translate3d(0, 0, 100px);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.parent:hover .card .logo .circle5 {
+  transform: translate3d(0, 0, 120px);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 600px) {
+  .parent {
+    width: 250px;
+    height: 280px;
+  }
+  .content {
+    padding: 80px 40px 0px 20px;
+  }
+  .content .title {
+    font-size: 18px;
+  }
+  .content .text {
+    font-size: 13px;
+    margin-top: 15px;
+  }
+}
+
+
+
+
+/* button css */
+
+/* From Uiverse.io by namecho */ 
+.uibutton,
+.uibutton::after {
+ padding: 16px 20px;
+ font-size: 18px;
+ background: linear-gradient(45deg, rgba(60, 72, 241, 0.199) 10%, #fd4747 );
+ border: 0;
+ color: #fff;
+ letter-spacing: 3px;
+ line-height: 1;
+ box-shadow: 6px 0px 0px #00e6f6;
+ outline: transparent;
+ position: relative;
+ border-radius: 10px;
+}
+
+.uibutton::after {
+ --slice-0: inset(50% 50% 50% 50%);
+ --slice-1: inset(80% -6px 0 0);
+ --slice-2: inset(50% -6px 30% 0);
+ --slice-3: inset(10% -6px 85% 0);
+ --slice-4: inset(40% -6px 43% 0);
+ --slice-5: inset(80% -6px 5% 0);
+ content: "HOVER ME";
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff013c 5%);
+ text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+ clip-path: var(--slice-0);
+}
+
+.uibutton:hover::after {
+ animation: 1s glitch;
+ animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+ 0% {
+  clip-path: var(--slice-1);
+  transform: translate(-20px, -10px);
+ }
+
+ 10% {
+  clip-path: var(--slice-3);
+  transform: translate(10px, 10px);
+ }
+
+ 20% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 10px);
+ }
+
+ 30% {
+  clip-path: var(--slice-3);
+  transform: translate(0px, 5px);
+ }
+
+ 40% {
+  clip-path: var(--slice-2);
+  transform: translate(-5px, 0px);
+ }
+
+ 50% {
+  clip-path: var(--slice-3);
+  transform: translate(5px, 0px);
+ }
+
+ 60% {
+  clip-path: var(--slice-4);
+  transform: translate(5px, 10px);
+ }
+
+ 70% {
+  clip-path: var(--slice-2);
+  transform: translate(-10px, 10px);
+ }
+
+ 80% {
+  clip-path: var(--slice-5);
+  transform: translate(20px, -10px);
+ }
+
+ 90% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 0px);
+ }
+
+ 100% {
+  clip-path: var(--slice-1);
+  transform: translate(0);
+ }
+}
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCjCnuERSUEGmrK989qeUc0UOQ6EWTloYA",
+        authDomain: "vnvrcontent.firebaseapp.com",
+        projectId: "vnvrcontent",
+        storageBucket: "vnvrcontent.firebasestorage.app",
+        messagingSenderId: "547621677436",
+        appId: "1:547621677436:web:9e9f4523c580064abe1cf9",
+        measurementId: "G-Q46FW0CLSC",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+  </script>
+<div id="mainparent">
+     <!-- 1 -->
+       <div class="parent">
+      <div class="card">
+        <div class="logo">
+          <span class="circle circle1"></span>
+          <span class="circle circle2"></span>
+          <span class="circle circle3"></span>
+          <span class="circle circle4"></span>
+          <span class="circle circle5" style="color: rgb(255, 255, 255); font-weight:bolder;font-size:x-large;">
+           ▽
+          </span>
+        </div>
+        <div class="glass"></div>
+        <div class="content">
+          <span class="title">1 - 1</span>
+          <span class="text"
+            >
+              <ul style=" padding: 20px; font-size:larger;">
+                <li><strong>(20.5 Credits)</strong>
+                  <ul>
+                    <li>Subjects: 5</li>
+                    <li>Labs: 4</li>
+                  </ul>
+                </li>
+              </ul>
+              </span
+          >
+        </div>
+      <div class="bottom">
+       <a href="https://vnvrkarthik.github.io/vspace/CGPA11.html">  <button class="uibutton">JUMP➤</button></a>
+        </div>
+      </div>
+      
+    </div>
+    <!-- 2 -->
+    <div class="parent">
+      <div class="card" style="background: linear-gradient(135deg, #4677fc 0%, #3ffbad 100%);">
+        <div class="logo">
+          <span class="circle circle1"></span>
+          <span class="circle circle2"></span>
+          <span class="circle circle3"></span>
+          <span class="circle circle4"></span>
+          <span class="circle circle5" style="color: rgb(255, 255, 255); font-weight:bolder;font-size:x-large;">
+           ▽
+          </span>
+        </div>
+        <div class="glass"></div>
+        <div class="content">
+          <span class="title">1 - 2</span>
+          <span class="text"
+            >
+<ul style="padding: 20px; font-size:larger;">
+  <li><strong>(19.5 Credits)</strong>
+    <ul>
+      <li>Subjects: 6</li>
+      <li>Labs: 4</li>
+    </ul>
+  </li>
+</ul>
+
+            </span
+          >
+        </div>
+      <div class="bottom">
+       <a href="https://vnvrkarthik.github.io/vspace/CGPA12.html">  <button class="uibutton">JUMP➤</button></a>
+        </div>
+      </div>
+      
+    </div>
+    <!-- 3 -->
+    <div class="parent">
+      <div class="card" style="background: linear-gradient(135deg, #9546fc 0%, #fb3f3f 100%);">
+        <div class="logo">
+          <span class="circle circle1"></span>
+          <span class="circle circle2"></span>
+          <span class="circle circle3"></span>
+          <span class="circle circle4"></span>
+          <span class="circle circle5" style="color: rgb(255, 255, 255); font-weight:bolder;font-size:x-large;">
+           ▽
+          </span>
+        </div>
+        <div class="glass"></div>
+        <div class="content">
+          <span class="title">2 - 1</span>
+          <span class="text"
+            >
+<ul style="padding: 20px; font-size:larger;">
+  <li><strong>(19 Credits)</strong>
+    <ul>
+      <li>Subjects: 5</li>
+      <li>Labs: 3</li>
+    </ul>
+  </li>
+</ul>
+            </span
+          >
+        </div>
+      <div class="bottom">
+       <a href="https://vnvrkarthik.github.io/vspace/CGPA21.html">  <button class="uibutton">JUMP➤</button></a>
+        </div>
+      </div>
+      
+    </div>
+    <!-- 4 -->
+    <div class="parent">
+      <div class="card" style="background: linear-gradient(135deg, #fc7046 0%, #3fc6fb 100%);">
+        <div class="logo">
+          <span class="circle circle1"></span>
+          <span class="circle circle2"></span>
+          <span class="circle circle3"></span>
+          <span class="circle circle4"></span>
+          <span class="circle circle5" style="color: rgb(255, 255, 255); font-weight:bolder;font-size:x-large;">
+           ▽
+          </span>
+        </div>
+        <div class="glass"></div>
+        <div class="content">
+          <span class="title">2 - 2</span>
+          <span class="text"
+            >
+              <ul style="padding: 20px; font-size:larger;">
+                <li><strong>(22 Credits)</strong>
+                  <ul>
+                    <li>Subjects: 5</li>
+                    <li>Labs: 4</li>
+                  </ul>
+                </li>
+              </ul>
+            </span
+          >
+        </div>
+      <div class="bottom">
+      <a href="https://vnvrkarthik.github.io/vspace/CGPA22.html">  <button class="uibutton">JUMP➤</button></a>
+        </div>
+      </div>
+      
+    </div>
+    <!-- 5 -->
+     <div class="parent">
+      <div class="card" style="background: linear-gradient(135deg, #46fc46a4 0%, #773ffb 100%);">
+        <div class="logo">
+          <span class="circle circle1"></span>
+          <span class="circle circle2"></span>
+          <span class="circle circle3"></span>
+          <span class="circle circle4"></span>
+          <span class="circle circle5" style="color: rgb(255, 255, 255); font-weight:bolder;font-size:x-large;">
+           ▽
+          </span>
+        </div>
+        <div class="glass"></div>
+        <div class="content">
+          <span class="title">3 - 1</span>
+          <span class="text"
+            >
+              <ul style="padding: 15px; font-size:larger;">
+                <li><strong>(22 Credits)</strong>
+                  <ul>
+                    <li>Core Subjects: 3</li>
+                    <li>Professional Electives: 1</li>
+                    <li>Open Electives: 1</li>
+                    <li>Labs: 3 + csp</li>
+                  </ul>
+                </li>
+              </ul>
+            </span
+          >
+        </div>
+      <div class="bottom">
+     <a href="https://vnvrkarthik.github.io/vspace/CGPA31.html">  <button class="uibutton">JUMP➤</button></a>
+        </div>
+      </div>
+      
+    </div>
+    <!-- 6 -->
+     <div class="parent">
+      <div class="card" style="background: linear-gradient(135deg, #4946fc 0%, #fb3f3f 100%);">
+        <div class="logo">
+          <span class="circle circle1"></span>
+          <span class="circle circle2"></span>
+          <span class="circle circle3"></span>
+          <span class="circle circle4"></span>
+          <span class="circle circle5" style="color: rgb(255, 255, 255); font-weight:bolder;font-size:x-large;">
+           ▽
+          </span>
+        </div>
+        <div class="glass"></div>
+        <div class="content">
+          <span class="title">3 - 2</span>
+          <span class="text"
+            >
+          <ul style="padding: 15px; font-size:larger;">
+            <li><strong>(24 Credits)</strong>
+              <ul>
+                <li>Core Subjects: 3</li>
+                <li>Professional Electives: 2</li>
+                <li>Open Electives: 1</li>
+                <li>Labs: 4</li>
+              </ul>
+            </li>
+          </ul>
+            </span
+          >
+        </div>
+      <div class="bottom">
+       <a href="https://vnvrkarthik.github.io/vspace/CGPA32.html">  <button class="uibutton">JUMP➤</button></a>
+        </div>
+      </div>
+      
+    </div>
+    <!-- 7 -->
+  <div class="parent">
+      <div class="card" style="background: linear-gradient(135deg, #46fcfcb0 0%, #3f81fb 100%);">
+        <div class="logo">
+          <span class="circle circle1"></span>
+          <span class="circle circle2"></span>
+          <span class="circle circle3"></span>
+          <span class="circle circle4"></span>
+          <span class="circle circle5" style="color: rgb(255, 255, 255); font-weight:bolder;font-size:x-large;">
+           ▽
+          </span>
+        </div>
+        <div class="glass"></div>
+        <div class="content">
+          <span class="title">4 - 1</span>
+          <span class="text"
+            >
+          <ul style="padding: 15px; font-size:larger;">
+            <li><strong>(18 Credits)</strong>
+              <ul>
+                <li>Core Subjects: 1</li>
+                <li>Professional Electives: 2</li>
+                <li>Open Electives: 1</li>
+                <li>Labs: 1 + Internship Evaluation</li>
+              </ul>
+            </li>
+          </ul>
+            </span
+          >
+        </div>
+      <div class="bottom">
+       <a href="https://vnvrkarthik.github.io/vspace/CGPA41.html">  <button class="uibutton">JUMP➤</button></a>
+        </div>
+      </div>
+      
+    </div>
+    <!-- 8 -->
+  <div class="parent">
+      <div class="card">
+        <div class="logo">
+          <span class="circle circle1"></span>
+          <span class="circle circle2"></span>
+          <span class="circle circle3"></span>
+          <span class="circle circle4"></span>
+          <span class="circle circle5" style="color: rgb(255, 255, 255); font-weight:bolder;font-size:x-large;">
+           ▽
+          </span>
+        </div>
+        <div class="glass"></div>
+        <div class="content">
+          <span class="title">4 - 2</span>
+          <span class="text"
+            >
+              
+<ul style="padding: 20px; font-size:larger;">
+  <li><strong>(12 Credits)</strong>
+    <ul>
+      <li>Full Semester Internship & Major Project Work</li>
+    </ul>
+  </li>
+</ul>
+            </span
+          >
+        </div>
+      <div class="bottom">
+      <a href="https://vnvrkarthik.github.io/vspace/CGPA42.html">  <button class="uibutton">JUMP➤</button></a>
+        </div>
+      </div>
+      
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
