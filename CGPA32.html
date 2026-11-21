@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="https://kit.fontawesome.com/1598ac5dc3.js" crossorigin="anonymous"></script>
+    
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA 3_2</title>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/166198214">
+
+
+    <!-- Basic SEO & Browser Tab -->
+  <meta name="description" content="CGPA CALCLATOR">
+  <meta name="author" content="VNVR">
+  <link rel="icon" href="https://ibb.co/bRrjRZMM][img]https://i.ibb.co/bRrjRZMM/BLE.jpg" type="image/png">
+
+  <!-- Open Graph / Social Media Image Previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vnvrkarthik.github.io/vspace/CGPA32.html">
+  <meta property="og:title" content="VNVR">
+  <meta property="og:description" content="calclate CGPA">
+  <meta property="og:image" content="https://ibb.co/bRrjRZMM][img]https://i.ibb.co/bRrjRZMM/BLE.jpg">
+  <meta property="og:image:alt" content="Description of the preview image for accessibility">
+
+  <!-- Twitter / X Large Image Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://ibb.co/bRrjRZMM][img]https://i.ibb.co/bRrjRZMM/BLE.jpg">
+    
+    <meta name="theme-color" content="#009879">
+    <meta name="msapplication-navbutton-color" content="#009879" >
+    <meta name="apple-mobile-web-app-capable" content="yes" >
+   
+ 
+
+    <meta name="view-transition" content="same-origin">
+    <!-- bts-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+
+    <style>
+        :root{
+            --color: #8256fe;
+            --bs-body :#e2deff;
+            --section-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            --img-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: 1s ease all;
+        }
+        ::selection{
+            background: var(--color);
+            color: white;
+        }
+        html{
+            scroll-behavior: smooth;
+            -webkit-tap-highlight-color: transparent;
+        }
+        body{
+                background:  #e2deff;
+
+            
+               height: max-content;
+               font-family: 'Raleway', sans-serif;
+        }
+        img{
+            border-radius: 50%;
+            border:solid 2px var(--color);
+            cursor: pointer;
+            aspect-ratio: 1;
+           
+            transition: 300ms ease;
+        }
+        img:hover{
+            border-radius: 5px;
+            scale: 1.3;
+            box-shadow: var(--img-shadow);
+            
+            /* position:relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%); */
+        }
+      
+        #ids{
+            background-image: url(https://th.bing.com/th/id/OIP.bQ54UCz0GaN9Xl12AdtS5wHaEK?w=262&h=180&c=7&r=0&o=5&pid=1.7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: cover;
+            letter-spacing: .5rem;
+            /* text-shadow: 10px 0 10px BLACK; */
+            font-weight: bolder;
+           
+            
+        }
+        #vnvr{
+            font-weight: bolder;
+            font-family: 'Raleway', sans-serif;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-image: url(https://avatars.githubusercontent.com/u/166198214), linear-gradient(rgba(0, 0, 255, 0.253),rgba(255, 0, 0, 0.281));
+            background-blend-mode: overlay;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* background-size: cover; */
+            /* text-shadow: 0 0 80px BLACK; */
+            
+          
+            transform: translate(-50%,-50%); 
+            transition: 4s ease all; 
+        }
+        .section2{
+                    background:#d9cdfa; ;
+                    border-radius: 15px;
+                    margin: 0 auto;
+                    color: #7343f6;
+                    /* box-shadow: var(--section-shadow); */
+                     box-shadow: rgba(163, 163, 255, 0) 0px 50px 100px -20px, rgb(98 91 217 / 38%) 0px 30px 60px -30px, rgba(55, 34, 172, 0.718) 0px -2px 6px 0px inset;
+        }
+        span{
+            margin: 15px auto;
+        }
+        .custom-tooltip {
+  --bs-tooltip-bg: #3508fd; 
+  --bs-tooltip-color: rgb(255, 255, 255);
+}
+div a{
+    background-color: #7858ff;
+    transition: 200ms ease-out;
+
+}
+div a:hover{
+    scale: 1.1;
+    background-color: rgb(70, 32, 176);
+}
+
+
+    /* transition effects */
+
+/*   
+ .hidden{
+            opacity: 0;
+        
+            transform: translateY(100px);
+
+            transition: all 500ms; 
+      }
+      @media(prefers-reduced-motion){
+        .hidden{
+            transition: none;
+        }
+      }
+        
+        .show{
+            opacity: 1;
+         
+            transform: translateY(0);
+
+        } */
+        
+#sec3 div{
+    display: block;
+    opacity: 0;
+    animation: reveal .5s forwards var(--delay);
+}
+@keyframes reveal {
+    from{
+        translate: 0 -20px;
+      
+       
+        
+    }
+    to{
+        translate: none;opacity: 1;
+    
+    }
+}
+
+        .submit{
+            background-color: #7f54f3;
+            color: #ffffff;
+            border: solid 1px transparent;
+            
+            transition: .3s;
+        }
+        .submit:hover{
+            
+            box-shadow: inset -10.5rem 0 0 0 rgb(81, 23, 134), inset 10.5rem 0 0 0 #491679;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        .button {
+  width: 110px;
+  /* height: 40px; */
+ 
+  gap: 10px;
+  background-color: rgb(158, 125, 248);
+  border-radius: 11px;
+  color: rgb(19, 19, 19);
+  font-weight: 600;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition-duration: .2s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+  padding-left: 8px;
+  transition-duration: .5s;
+}
+
+.svgIcon {
+  height: 25px;
+  transition-duration: 1s;
+}
+
+.bell path {
+  fill: rgb(19, 19, 19);
+}
+
+.button:hover {
+  background-color: rgb(98, 36, 241);
+  color: white;
+  transition-duration: .5s;
+}
+
+.button:active {
+  transform: scale(0.97);
+  transition-duration: .2s;
+}
+
+
+.button:hover .svgIcon {
+  transform: rotate(250deg);
+ 
+  transition-duration: 1.5s;
+}
+
+
+
+
+/* bu 2 */
+.uiverse {
+  --duration: 7s;
+  --easing: linear;
+  --c-color-1: rgba(255, 163, 26, 0.7);
+  --c-color-2: #1ee9d8;
+  --c-color-3: #e21bda;
+  --c-color-4: rgb(152, 26, 255);
+  --c-shadow: rgba(25, 172, 240, 0.5);
+  --c-shadow-inset-top: rgba(99, 32, 187, 0.9);
+  --c-shadow-inset-bottom: rgba(255, 250, 215, .8);
+  --c-radial-inner: #9250fd;
+  --c-radial-outer: #bb72ff;
+  --c-color: #fff;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  outline: none;
+  font-family:  'Raleway', sans-serif;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  display: table;
+  border-radius: 11px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: var(--c-color);
+  background: radial-gradient(circle, var(--c-radial-inner), var(--c-radial-outer) 80%);
+  box-shadow: 0 0 14px var(--c-shadow);
+  transition: 600ms ease;
+}
+
+.uiverse:hover{
+  transform: scale(0.8);
+  /* font-size: 1.5rem; */
+  filter:brightness(4);
+  color: #12061a;
+  font-weight: bold;
+}
+
+.uiverse:before {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 11px;
+  box-shadow: inset 0 3px 12px var(--c-shadow-inset-top), inset 0 -3px 4px var(--c-shadow-inset-bottom);
+}
+
+.uiverse .wrapper {
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  overflow: hidden;
+  border-radius: 11px;
+  min-width: 132px;
+  padding:0px 0;
+}
+
+.uiverse .wrapper span {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.uiverse .wrapper .circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  filter: blur(var(--blur, 8px));
+  background: var(--background, transparent);
+  transform: translate(var(--x, 0), var(--y, 0)) translateZ(0);
+  animation: var(--animation, none) var(--duration) var(--easing) infinite;
+}
+
+.uiverse .wrapper .circle.circle-1, .uiverse .wrapper .circle.circle-9, .uiverse .wrapper .circle.circle-10 {
+  --background: var(--c-color-4);
+}
+
+.uiverse .wrapper .circle.circle-3, .uiverse .wrapper .circle.circle-4 {
+  --background: var(--c-color-2);
+  --blur: 14px;
+}
+
+.uiverse .wrapper .circle.circle-5, .uiverse .wrapper .circle.circle-6 {
+  --background: var(--c-color-3);
+  --blur: 16px;
+}
+
+.uiverse .wrapper .circle.circle-2, .uiverse .wrapper .circle.circle-7, .uiverse .wrapper .circle.circle-8, .uiverse .wrapper .circle.circle-11, .uiverse .wrapper .circle.circle-12 {
+  --background: var(--c-color-1);
+  --blur: 12px;
+}
+
+.uiverse .wrapper .circle.circle-1 {
+  --x: 0;
+  --y: -40px;
+  --animation: circle-1;
+}
+
+.uiverse .wrapper .circle.circle-2 {
+  --x: 92px;
+  --y: 8px;
+  --animation: circle-2;
+}
+
+.uiverse .wrapper .circle.circle-3 {
+  --x: -12px;
+  --y: -12px;
+  --animation: circle-3;
+}
+
+.uiverse .wrapper .circle.circle-4 {
+  --x: 80px;
+  --y: -12px;
+  --animation: circle-4;
+}
+
+.uiverse .wrapper .circle.circle-5 {
+  --x: 12px;
+  --y: -4px;
+  --animation: circle-5;
+}
+
+.uiverse .wrapper .circle.circle-6 {
+  --x: 56px;
+  --y: 16px;
+  --animation: circle-6;
+}
+
+.uiverse .wrapper .circle.circle-7 {
+  --x: 8px;
+  --y: 28px;
+  --animation: circle-7;
+}
+
+.uiverse .wrapper .circle.circle-8 {
+  --x: 28px;
+  --y: -4px;
+  --animation: circle-8;
+}
+
+.uiverse .wrapper .circle.circle-9 {
+  --x: 20px;
+  --y: -12px;
+  --animation: circle-9;
+}
+
+.uiverse .wrapper .circle.circle-10 {
+  --x: 64px;
+  --y: 16px;
+  --animation: circle-10;
+}
+
+.uiverse .wrapper .circle.circle-11 {
+  --x: 4px;
+  --y: 4px;
+  --animation: circle-11;
+}
+
+.uiverse .wrapper .circle.circle-12 {
+  --blur: 14px;
+  --x: 52px;
+  --y: 4px;
+  --animation: circle-12;
+}
+
+@keyframes circle-1 {
+  33% {
+    transform: translate(0px, 16px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(12px, 64px) translateZ(0);
+  }
+}
+
+@keyframes circle-2 {
+  33% {
+    transform: translate(80px, -10px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(72px, -48px) translateZ(0);
+  }
+}
+
+@keyframes circle-3 {
+  33% {
+    transform: translate(20px, 12px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(12px, 4px) translateZ(0);
+  }
+}
+
+@keyframes circle-4 {
+  33% {
+    transform: translate(76px, -12px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(112px, -8px) translateZ(0);
+  }
+}
+
+@keyframes circle-5 {
+  33% {
+    transform: translate(84px, 28px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(40px, -32px) translateZ(0);
+  }
+}
+
+@keyframes circle-6 {
+  33% {
+    transform: translate(28px, -16px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(76px, -56px) translateZ(0);
+  }
+}
+
+@keyframes circle-7 {
+  33% {
+    transform: translate(8px, 28px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(20px, -60px) translateZ(0);
+  }
+}
+
+@keyframes circle-8 {
+  33% {
+    transform: translate(32px, -4px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(56px, -20px) translateZ(0);
+  }
+}
+
+@keyframes circle-9 {
+  33% {
+    transform: translate(20px, -12px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(80px, -8px) translateZ(0);
+  }
+}
+
+@keyframes circle-10 {
+  33% {
+    transform: translate(68px, 20px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(100px, 28px) translateZ(0);
+  }
+}
+
+@keyframes circle-11 {
+  33% {
+    transform: translate(4px, 4px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(68px, 20px) translateZ(0);
+  }
+}
+
+@keyframes circle-12 {
+  33% {
+    transform: translate(56px, 0px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(60px, -32px) translateZ(0);
+  }
+}
+
+
+   
+    </style>
+</head>
+<body class="p-3">
+
+  <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCjCnuERSUEGmrK989qeUc0UOQ6EWTloYA",
+        authDomain: "vnvrcontent.firebaseapp.com",
+        projectId: "vnvrcontent",
+        storageBucket: "vnvrcontent.firebasestorage.app",
+        messagingSenderId: "547621677436",
+        appId: "1:547621677436:web:9e9f4523c580064abe1cf9",
+        measurementId: "G-Q46FW0CLSC",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+  </script>
+    
+    <section class="container-fluid p-1 mx-auto pt-3" id="top">
+
+        <h1 class="text-center " style="transition: 500ms ease all;user-select: none;" id="ids">CGPA III-II <small style="font-size: 0.5rem;">(R23)</small></h1>
+        <section id="sec2"  class="row col-12 p-1 my-3 section2">
+            
+            <section class=" mx-auto my-4 col-11" style="border-radius:8px;background-color: #f1ecff;" id="sec3">
+
+          
+            <div class="vlsi my-2 row d-flex justify-content-around align-items-center" style="--delay:0s" >
+                <label for="vlsi" class="col-6">VLSID</label>
+                <select class="form-select w-25 col-6" aria-label="Default select example" id="vlsi">
+                   
+                  <option value="10">S &nbsp;&nbsp;&nbsp;&nbsp; --(Superior)</option>
+                  <option value="9">A&nbsp;&nbsp;&nbsp;&nbsp;--(Excellent)</option>
+                  <option value="8">B&nbsp;&nbsp;&nbsp;&nbsp;--(Very Good)</option>
+                  <option value="7">C&nbsp;&nbsp;&nbsp;&nbsp;--(Good)</option>
+
+                  <option value="6">D&nbsp;&nbsp;&nbsp;&nbsp;--(Average)</option>
+                  <option value="5">E&nbsp;&nbsp;&nbsp;&nbsp;--(Pass)</option>
+                  <option value="0">F&nbsp;&nbsp;&nbsp;&nbsp;--(Fail)</option>
+                  <option value="0">Ab&nbsp;&nbsp;&nbsp;&nbsp;--(Absent)</option>
+
+                  </select>
+            </div>
+
+            <div class="mpmc row my-2 d-flex justify-content-around align-items-center" style="--delay:0.1s">
+                <label for="mpmc" class="col-6">MPMC</label>
+                <select class="form-select w-25 col-6" aria-label="Default select example" id="mpmc">
+
+                       
+                  <option value="10">S &nbsp;&nbsp;&nbsp;&nbsp; --(Superior)</option>
+                  <option value="9">A&nbsp;&nbsp;&nbsp;&nbsp;--(Excellent)</option>
+                  <option value="8">B&nbsp;&nbsp;&nbsp;&nbsp;--(Very Good)</option>
+                  <option value="7">C&nbsp;&nbsp;&nbsp;&nbsp;--(Good)</option>
+
+                  <option value="6">D&nbsp;&nbsp;&nbsp;&nbsp;--(Average)</option>
+                  <option value="5">E&nbsp;&nbsp;&nbsp;&nbsp;--(Pass)</option>
+                  <option value="0">F&nbsp;&nbsp;&nbsp;&nbsp;--(Fail)</option>
+                  <option value="0">Ab&nbsp;&nbsp;&nbsp;&nbsp;--(Absent)</option>
+
+                  </select>
+            </div>
+
+            <div class="dsp my-2 row d-flex justify-content-around align-items-center" style="--delay:0.2s">
+                <label for="dsp" class="col-6">DSP</label>
+                <select class="form-select w-25 col-6" aria-label="Default select example" id="dsp">
+                   
+                   
+                  <option value="10">S &nbsp;&nbsp;&nbsp;&nbsp; --(Superior)</option>
+                  <option value="9">A&nbsp;&nbsp;&nbsp;&nbsp;--(Excellent)</option>
+                  <option value="8">B&nbsp;&nbsp;&nbsp;&nbsp;--(Very Good)</option>
+                  <option value="7">C&nbsp;&nbsp;&nbsp;&nbsp;--(Good)</option>
+
+                  <option value="6">D&nbsp;&nbsp;&nbsp;&nbsp;--(Average)</option>
+                  <option value="5">E&nbsp;&nbsp;&nbsp;&nbsp;--(Pass)</option>
+                  <option value="0">F&nbsp;&nbsp;&nbsp;&nbsp;--(Fail)</option>
+                  <option value="0">Ab&nbsp;&nbsp;&nbsp;&nbsp;--(Absent)</option>
+
+                  </select>
+            </div>
+
+
+            <div class="sc my-2 row d-flex justify-content-around align-items-center" 
+            style="--delay:0.3s" >
+                <label for="sc" class="col-6">Satellite Communications</label>
+                <select class="form-select w-25 col-6" aria-label="Default select example" id="sc">
+                   
+                       
+                  <option value="10">S &nbsp;&nbsp;&nbsp;&nbsp; --(Superior)</option>
+                  <option value="9">A&nbsp;&nbsp;&nbsp;&nbsp;--(Excellent)</option>
+                  <option value="8">B&nbsp;&nbsp;&nbsp;&nbsp;--(Very Good)</option>
+                  <option value="7">C&nbsp;&nbsp;&nbsp;&nbsp;--(Good)</option>
+
+                  <option value="6">D&nbsp;&nbsp;&nbsp;&nbsp;--(Average)</option>
+                  <option value="5">E&nbsp;&nbsp;&nbsp;&nbsp;--(Pass)</option>
+                  <option value="0">F&nbsp;&nbsp;&nbsp;&nbsp;--(Fail)</option>
+                  <option value="0">Ab&nbsp;&nbsp;&nbsp;&nbsp;--(Absent)</option>
+                  </select>
+            </div>
+
+
+            <div class="es my-2 row d-flex justify-content-around align-items-center"  style="--delay:0.4s" >
+                <label for="es" class="col-6">Embedded Systems</label>
+                <select class="form-select w-25 col-6" aria-label="Default select example" id="es">
+                   
+                   
+                       
+                  <option value="10">S &nbsp;&nbsp;&nbsp;&nbsp; --(Superior)</option>
+                  <option value="9">A&nbsp;&nbsp;&nbsp;&nbsp;--(Excellent)</option>
+                  <option value="8">B&nbsp;&nbsp;&nbsp;&nbsp;--(Very Good)</option>
+                  <option value="7">C&nbsp;&nbsp;&nbsp;&nbsp;--(Good)</option>
+
+                  <option value="6">D&nbsp;&nbsp;&nbsp;&nbsp;--(Average)</option>
+                  <option value="5">E&nbsp;&nbsp;&nbsp;&nbsp;--(Pass)</option>
+                  <option value="0">F&nbsp;&nbsp;&nbsp;&nbsp;--(Fail)</option>
+                  <option value="0">Ab&nbsp;&nbsp;&nbsp;&nbsp;--(Absent)</option>
+
+                  </select>
+            </div>
+
+              
+            <div class="dsip my-2 row d-flex justify-content-around align-items-center"  style="--delay:0.6s" >
+                <label for="dsip" class="col-6">DSIP</label>
+                <select class="form-select w-25 col-6" aria-label="Default select example" id="dsip">
+                       
+                  <option value="10">S &nbsp;&nbsp;&nbsp;&nbsp; --(Superior)</option>
+                  <option value="9">A&nbsp;&nbsp;&nbsp;&nbsp;--(Excellent)</option>
+                  <option value="8">B&nbsp;&nbsp;&nbsp;&nbsp;--(Very Good)</option>
+                  <option value="7">C&nbsp;&nbsp;&nbsp;&nbsp;--(Good)</option>
+
+                  <option value="6">D&nbsp;&nbsp;&nbsp;&nbsp;--(Average)</option>
+                  <option value="5">E&nbsp;&nbsp;&nbsp;&nbsp;--(Pass)</option>
+                  <option value="0">F&nbsp;&nbsp;&nbsp;&nbsp;--(Fail)</option>
+                  <option value="0">Ab&nbsp;&nbsp;&nbsp;&nbsp;--(Absent)</option>
+
+                  </select>
+            </div>
+
+            <div class="pe2 my-2 row d-flex justify-content-around align-items-center"   style="--delay:0.7s" >
+                <label for="pe2" class="col-6">PE - II</label>
+                <select class="form-select w-25 col-6" aria-label="Default select example" id="pe2">
+                   
+                   
+                       
+                  <option value="10">S &nbsp;&nbsp;&nbsp;&nbsp; --(Superior)</option>
+                  <option value="9">A&nbsp;&nbsp;&nbsp;&nbsp;--(Excellent)</option>
+                  <option value="8">B&nbsp;&nbsp;&nbsp;&nbsp;--(Very Good)</option>
+                  <option value="7">C&nbsp;&nbsp;&nbsp;&nbsp;--(Good)</option>
+
+                  <option value="6">D&nbsp;&nbsp;&nbsp;&nbsp;--(Average)</option>
+                  <option value="5">E&nbsp;&nbsp;&nbsp;&nbsp;--(Pass)</option>
+                  <option value="0">F&nbsp;&nbsp;&nbsp;&nbsp;--(Fail)</option>
+                  <option value="0">Ab&nbsp;&nbsp;&nbsp;&nbsp;--(Absent)</option>
+
+                  </select>
+            </div>
+
+
+
+               <div class="vlsilab my-2 row d-flex justify-content-around align-items-center"   style="--delay:0.7s" >
+                <label for="vlsilab" class="col-6">VLSI LAB</label>
+                <select class="form-select w-25 col-6" aria-label="Default select example" id="vlsilab">
+                   
+                   
+                       
+                  <option value="10">S &nbsp;&nbsp;&nbsp;&nbsp; --(Superior)</option>
+                  <option value="9">A&nbsp;&nbsp;&nbsp;&nbsp;--(Excellent)</option>
+                  <option value="8">B&nbsp;&nbsp;&nbsp;&nbsp;--(Very Good)</option>
+                  <option value="7">C&nbsp;&nbsp;&nbsp;&nbsp;--(Good)</option>
+
+                  <option value="6">D&nbsp;&nbsp;&nbsp;&nbsp;--(Average)</option>
+                  <option value="5">E&nbsp;&nbsp;&nbsp;&nbsp;--(Pass)</option>
+                  <option value="0">F&nbsp;&nbsp;&nbsp;&nbsp;--(Fail)</option>
+                  <option value="0">Ab&nbsp;&nbsp;&nbsp;&nbsp;--(Absent)</option>
+
+                  </select>
+            </div>
+
+
+               <div class="mpmclab my-2 row d-flex justify-content-around align-items-center"   style="--delay:0.7s" >
+                <label for="mpmclab" class="col-6">MPMC LAB</label>
+                <select class="form-select w-25 col-6" aria-label="Default select example" id="mpmclab">
+                   
+                   
+                       
+                  <option value="10">S &nbsp;&nbsp;&nbsp;&nbsp; --(Superior)</option>
+                  <option value="9">A&nbsp;&nbsp;&nbsp;&nbsp;--(Excellent)</option>
+                  <option value="8">B&nbsp;&nbsp;&nbsp;&nbsp;--(Very Good)</option>
+                  <option value="7">C&nbsp;&nbsp;&nbsp;&nbsp;--(Good)</option>
+
+                  <option value="6">D&nbsp;&nbsp;&nbsp;&nbsp;--(Average)</option>
+                  <option value="5">E&nbsp;&nbsp;&nbsp;&nbsp;--(Pass)</option>
+                  <option value="0">F&nbsp;&nbsp;&nbsp;&nbsp;--(Fail)</option>
+                  <option value="0">Ab&nbsp;&nbsp;&nbsp;&nbsp;--(Absent)</option>
+
+                  </select>
+            </div>
+
+
+               <div class="alab my-2 row d-flex justify-content-around align-items-center"   style="--delay:0.7s" >
+                <label for="alab" class="col-6">Antenna Lab</label>
+                <select class="form-select w-25 col-6" aria-label="Default select example" id="alab">
+                   
+                   
+                       
+                  <option value="10">S &nbsp;&nbsp;&nbsp;&nbsp; --(Superior)</option>
+                  <option value="9">A&nbsp;&nbsp;&nbsp;&nbsp;--(Excellent)</option>
+                  <option value="8">B&nbsp;&nbsp;&nbsp;&nbsp;--(Very Good)</option>
+                  <option value="7">C&nbsp;&nbsp;&nbsp;&nbsp;--(Good)</option>
+
+                  <option value="6">D&nbsp;&nbsp;&nbsp;&nbsp;--(Average)</option>
+                  <option value="5">E&nbsp;&nbsp;&nbsp;&nbsp;--(Pass)</option>
+                  <option value="0">F&nbsp;&nbsp;&nbsp;&nbsp;--(Fail)</option>
+                  <option value="0">Ab&nbsp;&nbsp;&nbsp;&nbsp;--(Absent)</option>
+
+                  </select>
+            </div>
+
+
+               <div class="mlp my-2 row d-flex justify-content-around align-items-center"   style="--delay:0.7s" >
+                <label for="mlp" class="col-6">MLP LAB</label>
+                <select class="form-select w-25 col-6" aria-label="Default select example" id="mlp">
+                   
+                   
+                       
+                  <option value="10">S &nbsp;&nbsp;&nbsp;&nbsp; --(Superior)</option>
+                  <option value="9">A&nbsp;&nbsp;&nbsp;&nbsp;--(Excellent)</option>
+                  <option value="8">B&nbsp;&nbsp;&nbsp;&nbsp;--(Very Good)</option>
+                  <option value="7">C&nbsp;&nbsp;&nbsp;&nbsp;--(Good)</option>
+
+                  <option value="6">D&nbsp;&nbsp;&nbsp;&nbsp;--(Average)</option>
+                  <option value="5">E&nbsp;&nbsp;&nbsp;&nbsp;--(Pass)</option>
+                  <option value="0">F&nbsp;&nbsp;&nbsp;&nbsp;--(Fail)</option>
+                  <option value="0">Ab&nbsp;&nbsp;&nbsp;&nbsp;--(Absent)</option>
+
+                  </select>
+            </div>
+
+
+        </section>
+<div>
+
+ 
+
+
+   
+<div class="w-100 mb-2  " style="display: flex;justify-content: space-between;">
+  <button class=" button mx right-0 w-50"  onclick="saveas()">
+    <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
+  SAVE AS PDF
+ </button>
+    <button class="uiverse " onclick="showres()" >
+        <div class="wrapper">
+            <span>CHECK</span>
+            <div class="circle circle-12"></div>
+            <div class="circle circle-11"></div>
+            <div class="circle circle-10"></div>
+            <div class="circle circle-9"></div>
+            <div class="circle circle-8"></div>
+            <div class="circle circle-7"></div>
+            <div class="circle circle-6"></div>
+            <div class="circle circle-5"></div>
+            <div class="circle circle-4"></div>
+            <div class="circle circle-3"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-1"></div>
+        </div>
+    </button>
+
+   
+    <!-- <button onclick="print()">print</button> -->
+   
+</div>
+    
+    
+
+</div>
+
+    </section>
+     
+           
+           
+
+
+  
+
+
+    <h1 class="text-center pb-3 user-select-none"  id="vnvr">ᐁ Ν &#9660; Ꭱ Ꮶ  </h1>
+
+
+
+    <small class="position-fixed bottom-0 end-0 mx-3 " id="version">version-2.O</small>
+
+
+
+
+        <i class="fa-brands fa-instagram fa-shake fa-2xl" style="color:#542bc4;position: absolute;left: 20px" onclick="window.location.href = 'https://instagram.com/vnvr_karthik1?igshid=NGExMmI2YTkyZg=='" id="insta"  data-bs-toggle="tooltip" data-bs-title="Instagram" data-bs-custom-class="custom-tooltip" ></i>
+        <i class="fa-brands fa-linkedin fa-shake fa-2xl" style="color: #542bc4;position: absolute;right: 20px;" onclick="window.location.href = 'https://www.linkedin.com/authwall?trk=bf&trkInfo=bf&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2F%25E1%2590%2581%25CE%25BD%25E1%2590%2581%25EA%25AD%25B1-%25EA%25AE%25B6%25E1%2590%2583%25EA%25AD%25B1%25CD%25B3%25EA%25AE%258B%25EA%25AE%2596%25EA%25AE%25B6-vnvr-karthik1-8864a0255' " id="linkedin" data-bs-toggle="tooltip" data-bs-title="LinkedIn" data-bs-custom-class="custom-tooltip" ></i>
+   
+       
+
+<!-- welcome script -->   
+<script>
+
+var j=1;
+function showres(){
+    var vlsi = document.getElementById('vlsi').value;
+    var mpmc = document.getElementById('mpmc').value;
+    var dsp = document.getElementById('dsp').value;
+    var sc = document.getElementById('sc').value;
+    var es = document.getElementById('es').value;
+    var pe2 = document.getElementById('pe2').value;
+    var vlsilab = document.getElementById('vlsilab').value;
+    var mpmclab = document.getElementById('mpmclab').value;
+    var alab = document.getElementById('alab').value;
+    var mlp = document.getElementById('mlp').value;
+    
+
+
+    var credits = vlsi*3.0+ mpmc*3.0+dsp*3.0+ sc*3.0+ es*3.0+pe2*3.0+vlsilab*1.5+mpmclab*1.5+alab*1+mlp*2;
+    credits = (credits*10)/240
+if(j<=0){
+  const para = document.createElement("h2");
+  // para.setAttribute('id','news')
+para.innerText = "Your SGPA : "+credits.toFixed(3);
+
+para.style.fontWeight ="bold"
+document.getElementById('sec3').appendChild(para)
+}else{
+  del()
+  const para = document.createElement("h2");
+  // para.setAttribute('id','news')
+para.innerText = "Your SGPA : "+credits.toFixed(3);
+para.style.fontWeight ="bold"
+document.getElementById('sec3').appendChild(para)
+
+}
+    j++;
+     window.navigator.vibrate([40])
+
+   
+    
+}
+
+function saveas(){
+  showres();
+  setTimeout(() => {
+    print()
+  }, 900);
+ 
+}
+
+   
+</script>
+
+
+<!-- creation script -->
+<script>
+    var j = 0;
+    var d = new Date();
+    var hours = d.getHours()
+
+  
+   navigator.vibrate(500)
+    
+
+  
+    var year = document.getElementById("year").value ;
+ 
+  
+        //CREATION
+        
+        //main section creation
+
+       
+       
+
+           
+
+            
+    
+console.log(hours)
+    //darktheme after 5pm
+  
+
+ 
+
+function color(){
+  
+
+   if(hours <17){
+   
+    var section = document.getElementById("sec2")
+    // section.style.boxShadow = 'rgba(163, 163, 255, 0.25) 0px 50px 100px -20px, rgba(93, 84, 253, 0.3) 0px 30px 60px -30px, rgba(70, 143, 215, 0.35) 0px -2px 6px 0px inset'
+    // section.style.background = '#7343f6'
+    document.getElementById('sec3').style.background="#f1ecff"
+   }else{
+    
+    setTimeout(() => {
+        document.body.style.background = "#1a1625";
+         document.getElementById("sec2").style.background="#140342"
+         document.getElementById("sec2").style.boxShadow = 'rgba(163, 163, 255, 0.25) 0px 50px 100px -20px, rgba(93, 84, 253, 0.3) 0px 30px 60px -30px, rgba(70, 143, 215, 0.35) 0px -2px 6px 0px inset'
+        document.getElementById('linkedin').style.color = "rgb(78, 52, 192)"
+        document.getElementById('insta').style.color = 'rgb(78, 52, 192)'
+      document.getElementById('sec3').style.background="#160c31"
+  
+        
+        
+    }, 4500);
+   
+    
+   }
+
+}
+color()
+
+
+
+
+
+// function del(){
+// var images = document.getElementsByTagName("img");
+// var spans = document.getElementsByTagName("span");
+// let section = document.getElementById("sec2")
+
+// section.remove();
+// var l = images.length;
+// for (var i = 0; i < l; i++) {
+//     images[0].parentNode.removeChild(images[0]);
+//     spans[0].parentNode.removeChild(spans[0]);
+// }
+//     }
+
+
+    
+    
+
+</script>
+
+
+<!-- text transition script -->
+<script>
+    var heading =document.getElementById("ids");
+    var vnvr = document.getElementById("vnvr");
+    var version = document.getElementById('version')
+
+    heading.style.letterSpacing="4.3vw";
+    heading.style.fontSize = "1.6rem"
+
+    // vnvr.style.fontSize= " 0.5rem"
+    vnvr.style.letterSpacing ="normal"
+   window.addEventListener("load",()=> {
+    heading.style.letterSpacing="normal"
+    heading.style.fontSize ="2.5rem"
+
+if(hours>=17){
+    version.style.color='rgb(110, 88, 173)'
+    setTimeout(() => {
+        heading.style.filter = 'contrast(31.5) saturate(39.5)'
+    
+ }, 4500);
+}
+    vnvr.style.letterSpacing ="3vw";
+    setInterval(() => {
+     vnvr.style.fontSize="20.5rem" 
+     setTimeout(() => {
+        
+         vnvr.style.opacity=0;
+     }, 500);
+    }, 1500);
+   
+
+    setTimeout(() => {
+        vnvr.style.display="none"
+    }, 5500);
+
+
+});
+
+  </script>
+
+
+
+
+
+   <script>
+    function del(){
+var divs = sec3.getElementsByTagName("h2");
+
+
+var l = divs.length;
+for (var i = 0; i < l; i++) {
+    divs[0].parentNode.removeChild(divs[0]);
+   
+}
+    } 
+    </script>
+   
+
+
+</body>
+</html>
