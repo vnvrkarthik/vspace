@@ -554,7 +554,27 @@ div a:hover{
   }
 }
 
-
+  header svg path {
+        fill: transparent;
+        stroke: #ffffff;
+        stroke-width: 5.5;
+        stroke-dasharray: 800;
+        stroke-dashoffset: 800;
+        animation: pp 7s ease-in-out 1 forwards;
+      }
+      @keyframes pp {
+        0% {
+          stroke-dashoffset: 800;
+        }
+        80% {
+          fill: transparent;
+          stroke: #fff;
+        }
+        100% {
+          stroke-dashoffset: 0;
+          fill: #c4c4e9;
+        }
+      }
    
     </style>
 </head>
@@ -583,7 +603,17 @@ div a:hover{
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
   </script>
+     <header class=" text-centre" style="width: 100%;display: flex;justify-content: center; align-items: center;">
     
+     
+
+<svg  viewBox="0 0 281.3 71.7" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#000000" stroke-width="0.25mm" fill="#000000" style="stroke:#000000;stroke-width:0.25mm;fill:#000000"><path d="M 122.2 36.8 L 122.2 6.7 L 137.3 0.2 L 137.3 70 L 115.4 50.8 L 115.4 44.4 L 80.3 13.8 L 80.3 0.1 L 122.2 36.8 Z M 265.6 45.2 L 265.6 45.3 L 281.3 70 L 263.3 70 L 249.4 48.1 L 236.4 48.1 L 236.4 63.4 L 221.3 69.9 L 221.3 4.2 L 231.4 4.2 L 231.4 26.2 L 236.4 26.2 L 236.4 36.8 L 260.1 36.8 L 265.6 45.2 Z M 259 15.2 L 240.5 15.2 L 240.5 22.1 L 235.5 22.1 L 235.5 0.2 L 259 0.1 Q 268 0.1 274.45 6.55 Q 280.9 13 280.9 22.1 Q 280.9 28.1 277.85 33.2 Q 274.8 38.3 269.7 41.1 L 264.2 32.7 L 240.5 32.7 L 240.5 28.9 L 259 28.9 Q 261.8 28.9 263.8 26.9 Q 265.8 24.9 265.8 22.05 Q 265.8 19.2 263.8 17.2 Q 261.8 15.2 259 15.2 Z M 38.4 22.4 L 43.8 34 L 32.3 59.1 L 35.2 65.4 L 32.3 71.7 L 0 1.4 L 16.6 1.4 L 32.3 35.7 L 38.4 22.4 Z M 182.8 22.4 L 188.2 34 L 176.7 59.1 L 179.6 65.4 L 176.7 71.7 L 144.4 1.4 L 161 1.4 L 176.7 35.7 L 182.8 22.4 Z M 91.3 70 L 76.2 70 L 76.2 17.9 L 111.3 48.5 L 111.3 54.9 L 91.3 37.4 L 91.3 70 Z M 43.9 21 L 53.6 0 L 70.2 0 L 40.7 64.1 L 37.8 57.8 L 49.3 32.6 L 43.9 21 Z M 188.3 21 L 198 0 L 214.6 0 L 185.1 64.1 L 182.2 57.8 L 193.7 32.6 L 188.3 21 Z" vector-effect="non-scaling-stroke"/></g></svg>
+
+
+
+    
+    </header>
+
     <section class="container-fluid p-1 mx-auto pt-3" id="top">
 
         <h1 class="text-center " style="transition: 500ms ease all;user-select: none;" id="ids">CGPA VI-I <small style="font-size: 0.5rem;">(R23)</small></h1>
