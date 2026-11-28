@@ -744,6 +744,32 @@ div a:hover{
                   </select>
             </div>
 
+
+
+                <div class="oe4 my-2 row d-flex justify-content-around align-items-center"  style="--delay:0.4s" >
+                <label for="oe4" class="col-6">OE 4 (NPTEL)</label>
+                <select class="form-select w-25 col-6" aria-label="Default select example" id="oe4">
+                   
+                   
+                       
+                  <option value="10">S &nbsp;&nbsp;&nbsp;&nbsp; --(Superior)</option>
+                  <option value="9">A&nbsp;&nbsp;&nbsp;&nbsp;--(Excellent)</option>
+                  <option value="8">B&nbsp;&nbsp;&nbsp;&nbsp;--(Very Good)</option>
+                  <option value="7">C&nbsp;&nbsp;&nbsp;&nbsp;--(Good)</option>
+
+                  <option value="6">D&nbsp;&nbsp;&nbsp;&nbsp;--(Average)</option>
+                  <option value="5">E&nbsp;&nbsp;&nbsp;&nbsp;--(Pass)</option>
+                  <option value="0">F&nbsp;&nbsp;&nbsp;&nbsp;--(Fail)</option>
+                  <option value="0">Ab&nbsp;&nbsp;&nbsp;&nbsp;--(Absent)</option>
+
+                  </select>
+                </div>
+
+
+
+
+                
+
               
             <div class="dsip my-2 row d-flex justify-content-around align-items-center"  style="--delay:0.6s" >
                 <label for="dsip" class="col-6">DSIP LAB</label>
@@ -853,14 +879,15 @@ function showres(){
     var pe4 = document.getElementById('pe4').value;
     var pe5 = document.getElementById('pe5').value;
     var oe3 = document.getElementById('oe3').value;
+    var oe4 = document.getElementById('oe4').value;
     var dsip = document.getElementById('dsip').value;
     var internship = document.getElementById('internship').value;
     
 
 
-    var credits = CMC*3.0+ ms*2.0+pe4*3.0+ pe5*3.0+ oe3*3.0+dsip*2.0+internship*2;
+    var credits = CMC*3.0+ ms*2.0+pe4*3.0+ pe5*3.0+ oe3*3.0+oe4*3.0+dsip*2.0+internship*2;
    
-    credits = (credits*10)/180
+    credits = (credits*10)/210
 if(j<=0){
   const para = document.createElement("h2");
   // para.setAttribute('id','news')
